@@ -35,7 +35,24 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      [
+            "customerio-expo-plugin",
+            {
+               "android": {
+                  "googleServicesFile": "./files/google-services.json"
+               },
+               "ios": {
+                  "pushNotification": {
+                     "useRichPush": true,
+                     "env": {
+                        "cdpApiKey": "<CDP API KEY>",
+                        "region": "us"
+                     }
+                  }
+               }
+            }
+         ]
     ],
     "experiments": {
       "typedRoutes": true
